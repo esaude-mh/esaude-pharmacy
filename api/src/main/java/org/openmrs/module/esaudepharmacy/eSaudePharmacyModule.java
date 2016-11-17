@@ -11,11 +11,12 @@
  *
  * Copyright (C) OpenMRS, LLC.  All Rights Reserved.
  */
-package org.openmrs.module.esaude-pharmacy;
+package org.openmrs.module.esaudepharmacy;
 
 import java.io.Serializable;
-import org.openmrs.BaseOpenmrsObject;
+
 import org.openmrs.BaseOpenmrsMetadata;
+import org.openmrs.BaseOpenmrsObject;
 
 /**
  * It is a model class. It should extend either {@link BaseOpenmrsObject} or {@link BaseOpenmrsMetadata}.
@@ -28,11 +29,11 @@ public class eSaudePharmacyModule extends BaseOpenmrsObject implements Serializa
 	
 	@Override
 	public Integer getId() {
-		return id;
+		return this.id;
 	}
 	
 	@Override
-	public void setId(Integer id) {
+	public void setId(final Integer id) {
 		this.id = id;
 	}
 	
